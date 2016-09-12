@@ -12,8 +12,9 @@ ${APP}                 /Users/somkiat/data/coaching/kbank/ksme/FizzBuzz/app/buil
 
 *** Testcases ***
 Count 1
+    [Tags]   dev
     Click Element    id=numberButton
-    Wait Until Page Contains Element    android=new UiSelector().text("1")
+    Wait Until Page Contains Element    android=new UiSelector().resourceId("fizzbuzz.demo.fizzbuzz:id/score").text("1")
 
 Count 2
     Click Element    id=numberButton
@@ -36,7 +37,6 @@ Count 5
     Wait Until Page Contains Element    android=new UiSelector().text("5")
 
 Count 15
-    [Tags]   dev
     Click Element    id=numberButton
     Click Element    id=numberButton
     Click Element    id=fizzButton
