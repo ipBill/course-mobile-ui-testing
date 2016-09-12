@@ -14,18 +14,18 @@ ${UDID}                b60853cb124840687200e2e4e9bbb8234c60019e
 *** Testcases ***
 Count 1
     Click Element    accessibility_id=numberButton
-    Wait Until Page Contains    1
+    Wait Until Page Contains Element    ios=.buttons().withPredicate('label == "1"')
 
 Count 2
     Click Element    accessibility_id=numberButton
     Click Element    accessibility_id=numberButton
-    Wait Until Page Contains    2
+    Wait Until Page Contains Element    ios=.buttons().withPredicate('label == "2"')
 
 Count 3
     Click Element    accessibility_id=numberButton
     Click Element    accessibility_id=numberButton
     Click Element    accessibility_id=fizzButton
-    Wait Until Page Contains    3
+    Wait Until Page Contains Element    ios=.buttons().withPredicate('label == "3"')
 
 
 Count 5
@@ -34,7 +34,7 @@ Count 5
     Click Element    accessibility_id=fizzButton
     Click Element    accessibility_id=numberButton
     Click Element    accessibility_id=buzzButton
-    Wait Until Page Contains    5
+    Wait Until Page Contains Element    ios=.buttons().withPredicate('label == "5"')
 
 Count 15
     [Tags]   dev
@@ -53,7 +53,7 @@ Count 15
     Click Element    accessibility_id=numberButton
     Click Element    accessibility_id=numberButton
     Click Element    accessibility_id=fizzBuzzButton
-    Wait Until Page Contains    15
+    Wait Until Page Contains Element    ios=.buttons().withPredicate('label == "15"')
 
 
 
