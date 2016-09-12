@@ -63,3 +63,8 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+demo/robotframework/*.png
+demo/robotframework/*.html
+demo/robotframework/*.xml
+demo/robotframework/*.html
